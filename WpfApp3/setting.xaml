@@ -1,0 +1,16 @@
+﻿<Window x:Class="WpfApp3.setting"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp3"
+        mc:Ignorable="d"
+        Title="setting" Height="450" Width="800">
+    <Grid>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Height="299" Width="436">
+            <TextBox Text="Настройки" IsReadOnly="True" TextAlignment="Center" FontSize="24" Margin="20" FontWeight="Bold" Height="56"/>
+            <Button Content="Тёмный режим" Command="{Binding ToggleDarkModeCommand}" Width="244" Margin="10" Foreground="White"/>
+            <Button Content="Назад" Command="{Binding GoBackCommand}" Width="246" Margin="10" Foreground="White"/>
+        </StackPanel>
+    </Grid>
+</Window>
